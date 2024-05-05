@@ -6,10 +6,12 @@
     --red-color: #ff3150;
     --yellow-color: #ffc400;
     --section-color: #eff7fa;
+    --main-color: #2196f3;
+    --main-color-alt: #1787e0;
+    --main-transition: 0.3s;
 }
 body{
     font-family: "Roboto", sans-serif;
-    height: 10000px;
 }
 .main-btn{
     background-color: var(--red-color);
@@ -138,3 +140,117 @@ body{
     transform: translateX(0);
 } 
 /* End our-work */ 
+/* Start Contactme */
+.Contactme{
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #ececec;
+}
+.Contactme .image{
+    background-image: url(../Images/coding.jpg);
+    background-size: cover;
+    color: white;
+    flex-basis: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+}
+.Contactme .image::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(23 135 224 / 93%);
+    z-index: -1;
+    /* animation: change-background 10s linear infinite; */
+}
+.Contactme .content{
+    text-align: center;
+    padding: 0 20px;
+}
+.Contactme .content h2{
+    font-size: 40px;
+    letter-spacing: -2px;
+}
+.Contactme .content p{
+    line-height: 1.6;
+    font-size: 18px;
+    max-width: 500px;
+    letter-spacing: 2px;
+}
+.Contactme .content img{
+    width: 300px;
+    max-width: 100%;
+}
+.Contactme .form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-basis: 50%;
+}
+.Contactme .form .input{
+    display: block;
+    width: 100%;
+    margin-bottom: 25px;
+    padding: 15px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    background-color: #f9f9f9;
+    caret-color: var(--main-color);
+}
+.Contactme .form textarea.input{
+    resize: none;
+    height: 200px;
+}
+.Contactme .form .input:focus{
+    outline: none;
+}
+.Contactme .form [type="submit"]{
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background-color: var(--main-color);
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    transition: var(--main-transition);
+}
+.Contactme .form [type="submit"]:hover{
+    background-color: var(--main-color-alt);
+}
+/* End Contactme */
+
+/* Start footer */
+.footer{
+    background-color: var(--dark-color);
+}
+.footer .copyright > span{
+    color: var(--green-color);
+}
+.footer .copyright div span{
+    color: var(--yellow-color);
+}
+.footer .contact ul svg{
+    width: 20px;
+    height: 20px;
+}
+.footer .facebook{
+    color: #1877f2;
+}
+.footer .linkedin{
+    color: #0077b5;
+}
+.footer .telegram{
+    color: #0088cc;
+}
+.footer .github{
+    color: #333;
+}
+/* End footer */
