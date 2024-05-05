@@ -148,7 +148,7 @@ body{
     background-color: #ececec;
 }
 .Contactme .image{
-    background-image: url(../Images/coding.jpg);
+    background-image: url(../images/coding.jpg);
     background-size: cover;
     color: white;
     flex-basis: 50%;
